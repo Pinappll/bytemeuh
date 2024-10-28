@@ -1,3 +1,4 @@
+/* Styles généraux */
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +17,7 @@ header, footer {
 }
 header nav a {
   color: #F2DFA7;
-  margin: 0 15px;
+  margin: 0 10px;
   text-decoration: none;
 }
 header nav a:hover {
@@ -37,4 +38,34 @@ button {
 }
 button:hover {
   background-color: #A71916;
+}
+footer {
+  margin-top: 2em;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  header nav a {
+    display: block;
+    margin: 10px 0;
+  }
+  .articles-grid, .tutorial-list {
+    display: flex;
+    flex-direction: column;
+  }
+  .faq-item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    font-size: 14px;
+  }
+  header, footer {
+    padding: 0.5em 0;
+  }
+  .intro, .faq, .about, .resources {
+    padding: 10px;
+  }
 }
