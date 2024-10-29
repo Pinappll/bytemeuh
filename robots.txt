@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /private/       # Empêche l’accès au dossier /private
+Disallow: /temp/          # Empêche l’accès au dossier temporaire
+
+Sitemap: https://www.byte-me-uh.tech/sitemap.xml
