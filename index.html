@@ -1,38 +1,20 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" itemscope itemtype="http://schema.org/Organization">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bytemeuh - Le site officiel de Bytemeuh</title>
+  <title itemprop="name">Bytemeuh - Le site officiel de Bytemeuh</title>
   <meta name="description" content="Bienvenue sur Bytemeuh, le site officiel de Bytemeuh dédié aux tendances technologiques, tutoriels et astuces de développement web.">
   <meta name="keywords" content="Bytemeuh, Byte Me Uh, technologie, développement web, tutoriels, tendances technologiques, programmation, HTML, CSS, JavaScript">
   <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://www.byte-me-uh.tech/">
   <link rel="icon" href="/favicon.ico">
-
-  <!-- Schema Markup Organization -->
-  <script type="application/ld+json">
-  {
-    "@context": "http://schema.org",
-    "@type": "Organization",
-    "name": "Bytemeuh",
-    "url": "https://www.byte-me-uh.tech",
-    "logo": "https://www.byte-me-uh.tech/logo.png",
-    "sameAs": [
-      "https://www.facebook.com/bytemeuh",
-      "https://www.twitter.com/bytemeuh",
-      "https://www.instagram.com/bytemeuh"
-    ],
-    "description": "Bytemeuh, le site officiel de Bytemeuh pour découvrir les tendances technologiques, tutoriels et astuces de développement web."
-  }
-  </script>
-  
 </head>
 <body>
   <header>
-    <h1>Bienvenue sur Bytemeuh</h1>
+    <h1>Bienvenue sur <span itemprop="name">Bytemeuh</span></h1>
     <nav>
-      <a href="/">Accueil</a>
+      <a href="/" itemprop="url">Accueil</a>
       <a href="/blog/">Blog</a>
       <a href="/tutoriels/">Tutoriels</a>
       <a href="/about/">À propos</a>
@@ -45,72 +27,74 @@
     <section class="intro">
       <h2>Découvrez le monde de la Tech</h2>
       <p>Bytemeuh est votre ressource pour les dernières tendances, tutoriels, et astuces en technologie et développement.</p>
-      <img src="/images/tech-world.webp" alt="Découverte du monde de la technologie" style="width:100%; height:auto; margin-top: 20px;">
+      <img src="/images/tech-world.webp" alt="Découverte du monde de la technologie" itemprop="logo" style="width:100%; height:auto; margin-top: 20px;">
     </section>
     
-    <section class="latest-articles">
+    <section class="latest-articles" itemscope itemtype="http://schema.org/ItemList">
       <h2>Articles Récents</h2>
+      <meta itemprop="numberOfItems" content="3">
       <div class="articles-grid">
         
         <!-- Article 1 -->
-        <article>
-          <a href="/blog/guide-complet-developpement/">
-            <img src="/images/guide-developpement-web.webp" alt="Guide complet du développement web" style="width:100%; height:auto; margin-bottom: 10px;">
+        <article itemscope itemtype="http://schema.org/Article">
+          <a href="/blog/guide-complet-developpement/" itemprop="url">
+            <img src="/images/guide-developpement-web.webp" alt="Guide complet du développement web" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
           </a>
-          <h3><a href="/blog/guide-complet-developpement/">Guide complet du développement web en 2024</a></h3>
-          <p>Découvrez les bases du développement web : HTML, CSS, et JavaScript pour créer un site moderne.</p>
+          <h3 itemprop="headline"><a href="/blog/guide-complet-developpement/">Guide complet du développement web en 2024</a></h3>
+          <p itemprop="description">Découvrez les bases du développement web : HTML, CSS, et JavaScript pour créer un site moderne.</p>
         </article>
         
         <!-- Article 2 -->
-        <article>
-          <a href="/blog/tendances-technologiques/">
-            <img src="/images/tendances-technologiques.webp" alt="Les tendances technologiques 2024" style="width:100%; height:auto; margin-bottom: 10px;">
+        <article itemscope itemtype="http://schema.org/Article">
+          <a href="/blog/tendances-technologiques/" itemprop="url">
+            <img src="/images/tendances-technologiques.webp" alt="Les tendances technologiques 2024" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
           </a>
-          <h3><a href="/blog/tendances-technologiques/">Les 5 tendances technologiques à suivre en 2024</a></h3>
-          <p>Une analyse des innovations technologiques majeures de cette année.</p>
+          <h3 itemprop="headline"><a href="/blog/tendances-technologiques/">Les 5 tendances technologiques à suivre en 2024</a></h3>
+          <p itemprop="description">Une analyse des innovations technologiques majeures de cette année.</p>
         </article>
         
         <!-- Article 3 -->
-        <article>
-          <a href="/blog/securiser-site-web/">
-            <img src="/images/securite-web.webp" alt="Sécuriser un site web en 2024" style="width:100%; height:auto; margin-bottom: 10px;">
+        <article itemscope itemtype="http://schema.org/Article">
+          <a href="/blog/securiser-site-web/" itemprop="url">
+            <img src="/images/securite-web.webp" alt="Sécuriser un site web en 2024" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
           </a>
-          <h3><a href="/blog/securiser-site-web/">Comment sécuriser un site web en 2024</a></h3>
-          <p>Un guide sur les bonnes pratiques de sécurité pour protéger votre site web.</p>
+          <h3 itemprop="headline"><a href="/blog/securiser-site-web/">Comment sécuriser un site web en 2024</a></h3>
+          <p itemprop="description">Un guide sur les bonnes pratiques de sécurité pour protéger votre site web.</p>
         </article>
         
       </div>
     </section>
 
-    <section class="tutorial-highlight">
+    <section class="tutorial-highlight" itemscope itemtype="http://schema.org/ItemList">
       <h2>Nos Tutoriels Populaires</h2>
+      <meta itemprop="numberOfItems" content="3">
       <div class="tutorials-grid">
         
         <!-- Tutoriel 1 -->
-        <article>
-          <a href="/tutoriels/introduction-html-css/">
-            <img src="/images/html-css-intro.webp" alt="Introduction au HTML et CSS" style="width:100%; height:auto; margin-bottom: 10px;">
+        <article itemscope itemtype="http://schema.org/HowTo">
+          <a href="/tutoriels/introduction-html-css/" itemprop="url">
+            <img src="/images/html-css-intro.webp" alt="Introduction au HTML et CSS" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
           </a>
-          <h3><a href="/tutoriels/introduction-html-css/">Introduction au HTML et CSS</a></h3>
-          <p>Les bases du HTML et CSS pour créer des pages web modernes et stylées.</p>
+          <h3 itemprop="name"><a href="/tutoriels/introduction-html-css/">Introduction au HTML et CSS</a></h3>
+          <p itemprop="description">Les bases du HTML et CSS pour créer des pages web modernes et stylées.</p>
         </article>
         
         <!-- Tutoriel 2 -->
-        <article>
-          <a href="/tutoriels/apprendre-javascript/">
-            <img src="/images/javascript-intro.webp" alt="Apprendre le JavaScript" style="width:100%; height:auto; margin-bottom: 10px;">
+        <article itemscope itemtype="http://schema.org/HowTo">
+          <a href="/tutoriels/apprendre-javascript/" itemprop="url">
+            <img src="/images/javascript-intro.webp" alt="Apprendre le JavaScript" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
           </a>
-          <h3><a href="/tutoriels/apprendre-javascript/">Apprendre le JavaScript en 2024</a></h3>
-          <p>Découvrez JavaScript et comment ajouter de l'interactivité à vos sites.</p>
+          <h3 itemprop="name"><a href="/tutoriels/apprendre-javascript/">Apprendre le JavaScript en 2024</a></h3>
+          <p itemprop="description">Découvrez JavaScript et comment ajouter de l'interactivité à vos sites.</p>
         </article>
         
         <!-- Tutoriel 3 -->
-        <article>
-          <a href="/tutoriels/maitriser-css-avance/">
-            <img src="/images/css-advanced.webp" alt="Maîtriser le CSS avancé" style="width:100%; height:auto; margin-bottom: 10px;">
+        <article itemscope itemtype="http://schema.org/HowTo">
+          <a href="/tutoriels/maitriser-css-avance/" itemprop="url">
+            <img src="/images/css-advanced.webp" alt="Maîtriser le CSS avancé" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
           </a>
-          <h3><a href="/tutoriels/maitriser-css-avance/">Maîtriser le CSS avancé : Flexbox et Grid</a></h3>
-          <p>Apprenez les techniques avancées de CSS pour des mises en page modernes et responsives.</p>
+          <h3 itemprop="name"><a href="/tutoriels/maitriser-css-avance/">Maîtriser le CSS avancé : Flexbox et Grid</a></h3>
+          <p itemprop="description">Apprenez les techniques avancées de CSS pour des mises en page modernes et responsives.</p>
         </article>
         
       </div>
@@ -118,7 +102,7 @@
 
   </main>
   <footer>
-    <p>&copy; 2024 Bytemeuh - Tous droits réservés.</p>
+    <p>&copy; 2024 <span itemprop="name">Bytemeuh</span> - Tous droits réservés.</p>
   </footer>
 </body>
 </html>
