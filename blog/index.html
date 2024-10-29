@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bytemeuh - Blog Bytemeuh sur la technologie</title>
+  <title itemprop="name">Bytemeuh - Blog Bytemeuh sur la technologie</title>
   <meta name="description" content="Explorez les articles de Bytemeuh sur la technologie et le développement. Guides, astuces et actualités vous attendent sur le blog Bytemeuh.">
   <meta name="keywords" content="Bytemeuh, blog technologie, blog développement web, actualités technologiques, Bytemeuh, tutoriels programmation">
   <link rel="stylesheet" href="/styles.css">
   <link rel="canonical" href="https://www.byte-me-uh.tech/blog/">
   <link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/Blog">
   <header>
-    <h1>Bytemeuh - Blog</h1>
+    <h1 itemprop="name">Bytemeuh - Blog</h1>
     <nav>
       <a href="/">Accueil</a>
       <a href="/blog/">Blog</a>
@@ -24,40 +24,40 @@
     </nav>
   </header>
   <main>
-    <section class="blog-list">
+    <section class="blog-list" itemscope itemprop="blogPost" itemtype="http://schema.org/BlogPosting">
       <h2>Nos Derniers Articles</h2>
       
       <!-- Article 1 -->
-      <article>
-        <a href="/blog/guide-complet-developpement/">
-          <img src="/images/guide-developpement-web.webp" alt="Guide du développement web 2024" style="width:100%; height:auto; margin-bottom: 10px;">
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+        <a href="/blog/guide-complet-developpement/" itemprop="url">
+          <img src="/images/guide-developpement-web.webp" alt="Guide du développement web 2024" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
         </a>
-        <h3><a href="/blog/guide-complet-developpement/">Guide complet du développement web en 2024</a></h3>
-        <p>Découvrez les bases du développement web : HTML, CSS, et JavaScript pour créer un site moderne.</p>
+        <h3 itemprop="headline"><a href="/blog/guide-complet-developpement/">Guide complet du développement web en 2024</a></h3>
+        <p itemprop="description">Découvrez les bases du développement web : HTML, CSS, et JavaScript pour créer un site moderne.</p>
       </article>
       
       <!-- Article 2 -->
-      <article>
-        <a href="/blog/tendances-technologiques/">
-          <img src="/images/tendances-technologiques.webp" alt="Tendances technologiques 2024" style="width:100%; height:auto; margin-bottom: 10px;">
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+        <a href="/blog/tendances-technologiques/" itemprop="url">
+          <img src="/images/tendances-technologiques.webp" alt="Tendances technologiques 2024" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
         </a>
-        <h3><a href="/blog/tendances-technologiques/">Les 5 tendances technologiques à suivre en 2024</a></h3>
-        <p>Une analyse des innovations technologiques majeures de cette année.</p>
+        <h3 itemprop="headline"><a href="/blog/tendances-technologiques/">Les 5 tendances technologiques à suivre en 2024</a></h3>
+        <p itemprop="description">Une analyse des innovations technologiques majeures de cette année.</p>
       </article>
       
       <!-- Article 3 -->
-      <article>
-        <a href="/blog/securiser-site-web/">
-          <img src="/images/securite-web.webp" alt="Sécuriser un site web en 2024" style="width:100%; height:auto; margin-bottom: 10px;">
+      <article itemscope itemtype="http://schema.org/BlogPosting">
+        <a href="/blog/securiser-site-web/" itemprop="url">
+          <img src="/images/securite-web.webp" alt="Sécuriser un site web en 2024" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
         </a>
-        <h3><a href="/blog/securiser-site-web/">Comment sécuriser un site web en 2024</a></h3>
-        <p>Un guide sur les bonnes pratiques de sécurité pour protéger votre site web.</p>
+        <h3 itemprop="headline"><a href="/blog/securiser-site-web/">Comment sécuriser un site web en 2024</a></h3>
+        <p itemprop="description">Un guide sur les bonnes pratiques de sécurité pour protéger votre site web.</p>
       </article>
       
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Bytemeuh - Tous droits réservés.</p>
+    <p>&copy; 2024 <span itemprop="name">Bytemeuh</span> - Tous droits réservés.</p>
   </footer>
 </body>
 </html>

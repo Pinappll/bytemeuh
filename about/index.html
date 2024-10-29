@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bytemeuh - À propos de Bytemeuh</title>
+  <title itemprop="name">Bytemeuh - À propos de Bytemeuh</title>
   <meta name="description" content="Découvrez la mission de Bytemeuh avec Bytemeuh : une plateforme dédiée aux passionnés de technologie et aux développeurs.">
   <meta name="keywords" content="à propos Bytemeuh, Bytemeuh, mission Bytemeuh, technologie, développement web, ressources développeurs">
   <link rel="stylesheet" href="/styles.css">
   <link rel="canonical" href="https://www.byte-me-uh.tech/about/">
   <link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/AboutPage">
   <header>
-    <h1>À propos de Bytemeuh</h1>
+    <h1 itemprop="name">À propos de <span itemprop="name">Bytemeuh</span></h1>
     <nav>
       <a href="/">Accueil</a>
       <a href="/blog/">Blog</a>
@@ -24,13 +24,13 @@
     </nav>
   </header>
   <main>
-    <section class="about">
+    <section class="about" itemscope itemtype="http://schema.org/Organization">
       <h2>Notre Mission</h2>
-      <p>Bytemeuh est dédié à fournir des ressources, des tutoriels, et des informations fiables sur les dernières tendances technologiques.</p>
+      <p itemprop="description">Bytemeuh est dédié à fournir des ressources, des tutoriels, et des informations fiables sur les dernières tendances technologiques.</p>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Bytemeuh - Tous droits réservés.</p>
+    <p>&copy; 2024 <span itemprop="name">Bytemeuh</span> - Tous droits réservés.</p>
   </footer>
 </body>
 </html>
