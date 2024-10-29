@@ -3,42 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Apprendre le JavaScript - Bytemeuh</title>
+  <title itemprop="name">Apprendre le JavaScript - Bytemeuh</title>
   <meta name="description" content="Commencez avec JavaScript et développez vos compétences en programmation pour ajouter de l'interactivité à vos sites.">
   <meta name="keywords" content="apprendre JavaScript, tutoriel JavaScript, programmation web, interactivité web, DOM JavaScript">
   <link rel="stylesheet" href="/styles.css">
   <link rel="canonical" href="https://www.byte-me-uh.tech/tutoriels/apprendre-javascript/">
   <link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/HowTo">
   <header>
-    <h1>Apprendre le JavaScript en 2024</h1>
+    <h1 itemprop="name">Apprendre le JavaScript en 2024</h1>
     <nav>
       <a href="/">Accueil</a>
       <a href="/blog/">Blog</a>
       <a href="/tutoriels/">Tutoriels</a>
-        <a href="/about/">À propos</a>
-        <a href="/faq/">FAQ</a>
-        <a href="/ressources/">Ressources</a>
+      <a href="/about/">À propos</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/ressources/">Ressources</a>
       <a href="/contact/">Contact</a>
     </nav>
   </header>
   <main>
     <article>
-      <h2>Introduction à JavaScript</h2>
-      <p>JavaScript est un langage de programmation qui permet d'ajouter de l'interactivité aux pages web. Avec JavaScript, vous pouvez manipuler le DOM, créer des animations, et bien plus.</p>
-      <img src="/images/javascript-interactivity.webp" alt="Exemple de JavaScript" style="width:100%; height:auto; margin:20px 0;">
+      <!-- Étape 1 : Introduction à JavaScript -->
+      <section itemscope itemtype="http://schema.org/HowToStep">
+        <h2 itemprop="name">Introduction à JavaScript</h2>
+        <p itemprop="text">JavaScript est un langage de programmation qui permet d'ajouter de l'interactivité aux pages web. Avec JavaScript, vous pouvez manipuler le DOM, créer des animations, et bien plus.</p>
+        <img src="/images/javascript-interactivity.webp" alt="Exemple de JavaScript" style="width:100%; height:auto; margin:20px 0;" itemprop="image">
+      </section>
       
-      <h2>Les Bases du JavaScript</h2>
-      <p>JavaScript inclut des concepts de base comme les variables, les conditions, et les boucles. Commencez par déclarer une variable avec <code>let</code> ou <code>const</code>, puis explorez la syntaxe pour créer des interactions simples.</p>
-      <img src="/images/javascript-intro.webp" alt="Syntaxe de base JavaScript" style="width:100%; height:auto; margin:20px 0;">
+      <!-- Étape 2 : Les Bases du JavaScript -->
+      <section itemscope itemtype="http://schema.org/HowToStep">
+        <h2 itemprop="name">Les Bases du JavaScript</h2>
+        <p itemprop="text">JavaScript inclut des concepts de base comme les variables, les conditions, et les boucles. Commencez par déclarer une variable avec <code>let</code> ou <code>const</code>, puis explorez la syntaxe pour créer des interactions simples.</p>
+        <img src="/images/javascript-intro.webp" alt="Syntaxe de base JavaScript" style="width:100%; height:auto; margin:20px 0;" itemprop="image">
+      </section>
       
-      <h2>Manipuler le DOM</h2>
-      <p>Utilisez JavaScript pour sélectionner et modifier des éléments HTML en utilisant des méthodes comme <code>document.getElementById</code> et <code>querySelector</code>.</p>
+      <!-- Étape 3 : Manipuler le DOM -->
+      <section itemscope itemtype="http://schema.org/HowToStep">
+        <h2 itemprop="name">Manipuler le DOM</h2>
+        <p itemprop="text">Utilisez JavaScript pour sélectionner et modifier des éléments HTML en utilisant des méthodes comme <code>document.getElementById</code> et <code>querySelector</code>.</p>
+      </section>
     </article>
   </main>
   <footer>
-    <p>&copy; 2024 Bytemeuh - Tous droits réservés.</p>
+    <p>&copy; 2024 <span itemprop="name">Bytemeuh</span> - Tous droits réservés.</p>
   </footer>
 </body>
 </html>

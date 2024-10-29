@@ -3,18 +3,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bytemeuh - Tutoriels Bytemeuh pour développeurs</title>
+  <title itemprop="name">Bytemeuh - Tutoriels Bytemeuh pour développeurs</title>
   <meta name="description" content="Apprenez le développement web avec les tutoriels Bytemeuh sur Bytemeuh. HTML, CSS, JavaScript et plus.">
   <meta name="keywords" content="tutoriels Bytemeuh, tutoriels développement web, HTML, CSS, JavaScript, frameworks JavaScript, Bytemeuh, apprendre programmation">
   <link rel="stylesheet" href="/styles.css">
   <link rel="canonical" href="https://www.byte-me-uh.tech/tutoriels/">
   <link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
   <header>
-    <h1>Tutoriels Bytemeuh</h1>
+    <h1>Tutoriels <span itemprop="name">Bytemeuh</span></h1>
     <nav>
-      <a href="/">Accueil</a>
+      <a href="/" itemprop="url">Accueil</a>
       <a href="/blog/">Blog</a>
       <a href="/tutoriels/">Tutoriels</a>
       <a href="/about/">À propos</a>
@@ -24,49 +24,50 @@
     </nav>
   </header>
   <main>
-    <section class="tutorial-list">
-      <h2>Explorez nos Tutoriels</h2>
+    <section class="tutorial-list" itemscope itemtype="http://schema.org/ItemList">
+      <h2 itemprop="name">Explorez nos Tutoriels</h2>
+      <meta itemprop="numberOfItems" content="4">
       
       <!-- Tutoriel 1 -->
-      <article>
-        <a href="/tutoriels/introduction-html-css/">
-          <img src="/images/html-css-intro.webp" alt="Introduction au HTML et CSS" style="width:100%; height:auto; margin-bottom: 10px;">
+      <article itemscope itemtype="http://schema.org/HowTo">
+        <a href="/tutoriels/introduction-html-css/" itemprop="url">
+          <img src="/images/html-css-intro.webp" alt="Introduction au HTML et CSS" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
         </a>
-        <h3><a href="/tutoriels/introduction-html-css/">Introduction au HTML et CSS</a></h3>
-        <p>Les bases du HTML et du CSS pour créer vos premières pages web. Apprenez à structurer et styliser votre site.</p>
+        <h3 itemprop="name"><a href="/tutoriels/introduction-html-css/">Introduction au HTML et CSS</a></h3>
+        <p itemprop="description">Les bases du HTML et du CSS pour créer vos premières pages web. Apprenez à structurer et styliser votre site.</p>
       </article>
       
       <!-- Tutoriel 2 -->
-      <article>
-        <a href="/tutoriels/apprendre-javascript/">
-          <img src="/images/javascript-intro.webp" alt="Apprendre le JavaScript" style="width:100%; height:auto; margin-bottom: 10px;">
+      <article itemscope itemtype="http://schema.org/HowTo">
+        <a href="/tutoriels/apprendre-javascript/" itemprop="url">
+          <img src="/images/javascript-intro.webp" alt="Apprendre le JavaScript" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
         </a>
-        <h3><a href="/tutoriels/apprendre-javascript/">Apprendre le JavaScript en 2024</a></h3>
-        <p>Commencez avec JavaScript et développez vos compétences en programmation pour ajouter de l'interactivité à vos sites.</p>
+        <h3 itemprop="name"><a href="/tutoriels/apprendre-javascript/">Apprendre le JavaScript en 2024</a></h3>
+        <p itemprop="description">Commencez avec JavaScript et développez vos compétences en programmation pour ajouter de l'interactivité à vos sites.</p>
       </article>
       
       <!-- Tutoriel 3 -->
-      <article>
-        <a href="/tutoriels/maitriser-css-avance/">
-          <img src="/images/css-advanced.webp" alt="Maîtriser le CSS avancé" style="width:100%; height:auto; margin-bottom: 10px;">
+      <article itemscope itemtype="http://schema.org/HowTo">
+        <a href="/tutoriels/maitriser-css-avance/" itemprop="url">
+          <img src="/images/css-advanced.webp" alt="Maîtriser le CSS avancé" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
         </a>
-        <h3><a href="/tutoriels/maitriser-css-avance/">Maîtriser le CSS avancé : Flexbox et Grid</a></h3>
-        <p>Découvrez Flexbox et Grid pour des mises en page CSS modernes et responsives.</p>
+        <h3 itemprop="name"><a href="/tutoriels/maitriser-css-avance/">Maîtriser le CSS avancé : Flexbox et Grid</a></h3>
+        <p itemprop="description">Découvrez Flexbox et Grid pour des mises en page CSS modernes et responsives.</p>
       </article>
 
       <!-- Tutoriel 4 -->
-      <article>
-        <a href="/tutoriels/introduction-aux-frameworks/">
-          <img src="/images/javascript-intro.webp" alt="Introduction aux frameworks JavaScript" style="width:100%; height:auto; margin-bottom: 10px;">
+      <article itemscope itemtype="http://schema.org/HowTo">
+        <a href="/tutoriels/introduction-aux-frameworks/" itemprop="url">
+          <img src="/images/javascript-intro.webp" alt="Introduction aux frameworks JavaScript" style="width:100%; height:auto; margin-bottom: 10px;" itemprop="image">
         </a>
-        <h3><a href="/tutoriels/introduction-aux-frameworks/">Introduction aux frameworks JavaScript</a></h3>
-        <p>Explorez les frameworks comme React et Vue.js pour construire des applications web dynamiques.</p>
+        <h3 itemprop="name"><a href="/tutoriels/introduction-aux-frameworks/">Introduction aux frameworks JavaScript</a></h3>
+        <p itemprop="description">Explorez les frameworks comme React et Vue.js pour construire des applications web dynamiques.</p>
       </article>
 
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Bytemeuh - Tous droits réservés.</p>
+    <p>&copy; 2024 <span itemprop="name">Bytemeuh</span> - Tous droits réservés.</p>
   </footer>
 </body>
 </html>

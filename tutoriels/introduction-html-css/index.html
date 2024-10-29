@@ -3,42 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Introduction au HTML et CSS - Byte Me Uh</title>
+  <title itemprop="name">Introduction au HTML et CSS - Byte Me Uh</title>
   <meta name="description" content="Découvrez les bases du HTML et CSS pour créer vos premières pages web. Apprenez à structurer et styliser votre site.">
   <meta name="keywords" content="HTML, CSS, introduction HTML, introduction CSS, tutoriels HTML, tutoriels CSS, apprendre HTML, apprendre CSS">
   <link rel="stylesheet" href="/styles.css">
   <link rel="canonical" href="https://www.byte-me-uh.tech/tutoriels/introduction-html-css/">
   <link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/HowTo">
   <header>
-    <h1>Introduction au HTML et CSS</h1>
+    <h1 itemprop="name">Introduction au HTML et CSS</h1>
     <nav>
       <a href="/">Accueil</a>
       <a href="/blog/">Blog</a>
       <a href="/tutoriels/">Tutoriels</a>
-        <a href="/about/">À propos</a>
-        <a href="/faq/">FAQ</a>
-        <a href="/ressources/">Ressources</a>
+      <a href="/about/">À propos</a>
+      <a href="/faq/">FAQ</a>
+      <a href="/ressources/">Ressources</a>
       <a href="/contact/">Contact</a>
     </nav>
   </header>
   <main>
     <article>
-      <h2>Qu'est-ce que le HTML ?</h2>
-      <p>Le <strong>HTML</strong> (HyperText Markup Language) est le langage de base pour structurer une page web. Les balises HTML définissent les différents éléments de la page.</p>
-      <img src="/images/html-basics.webp" alt="Exemple de code HTML" style="width:100%; height:auto; margin:20px 0;">
+      <!-- Étape 1 : HTML -->
+      <section itemscope itemtype="http://schema.org/HowToStep">
+        <h2 itemprop="name">Qu'est-ce que le HTML ?</h2>
+        <p itemprop="text">Le <strong>HTML</strong> (HyperText Markup Language) est le langage de base pour structurer une page web. Les balises HTML définissent les différents éléments de la page.</p>
+        <img src="/images/html-basics.webp" alt="Exemple de code HTML" style="width:100%; height:auto; margin:20px 0;" itemprop="image">
+      </section>
       
-      <h2>Qu'est-ce que le CSS ?</h2>
-      <p>Le <strong>CSS</strong> (Cascading Style Sheets) permet de styliser les éléments HTML en définissant des couleurs, des polices, et des mises en page. Il est essentiel pour rendre un site attrayant.</p>
-      <img src="/images/html-css-intro.webp" alt="Exemple de code CSS" style="width:100%; height:auto; margin:20px 0;">
+      <!-- Étape 2 : CSS -->
+      <section itemscope itemtype="http://schema.org/HowToStep">
+        <h2 itemprop="name">Qu'est-ce que le CSS ?</h2>
+        <p itemprop="text">Le <strong>CSS</strong> (Cascading Style Sheets) permet de styliser les éléments HTML en définissant des couleurs, des polices, et des mises en page. Il est essentiel pour rendre un site attrayant.</p>
+        <img src="/images/html-css-intro.webp" alt="Exemple de code CSS" style="width:100%; height:auto; margin:20px 0;" itemprop="image">
+      </section>
       
-      <h2>Commencer avec HTML et CSS</h2>
-      <p>Pour démarrer, créez un fichier HTML et ajoutez-y du contenu structuré, puis liez un fichier CSS pour la mise en forme. Utilisez des balises comme <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, et <code>&lt;img&gt;</code> pour le HTML et des sélecteurs CSS pour styliser les éléments.</p>
+      <!-- Étape 3 : Démarrage avec HTML et CSS -->
+      <section itemscope itemtype="http://schema.org/HowToStep">
+        <h2 itemprop="name">Commencer avec HTML et CSS</h2>
+        <p itemprop="text">Pour démarrer, créez un fichier HTML et ajoutez-y du contenu structuré, puis liez un fichier CSS pour la mise en forme. Utilisez des balises comme <code>&lt;h1&gt;</code>, <code>&lt;p&gt;</code>, et <code>&lt;img&gt;</code> pour le HTML et des sélecteurs CSS pour styliser les éléments.</p>
+      </section>
     </article>
   </main>
   <footer>
-    <p>&copy; 2024 Bytemeuh - Tous droits réservés.</p>
+    <p>&copy; 2024 <span itemprop="name">Bytemeuh</span> - Tous droits réservés.</p>
   </footer>
 </body>
 </html>

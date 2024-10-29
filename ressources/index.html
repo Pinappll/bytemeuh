@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bytemeuh - Ressources Bytemeuh pour développeurs</title>
+  <title itemprop="name">Bytemeuh - Ressources Bytemeuh pour développeurs</title>
   <meta name="description" content="Découvrez les ressources sélectionnées par Bytemeuh sur Bytemeuh : outils, livres et cours pour développeurs.">
   <link rel="stylesheet" href="/styles.css">
   <meta name="keywords" content="ressources développeurs, outils, livres, cours, développement web">
   <link rel="canonical" href="https://www.byte-me-uh.tech/ressources/">
   <link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
   <header>
-    <h1>Ressources</h1>
+    <h1 itemprop="name">Ressources</h1>
     <nav>
       <a href="/">Accueil</a>
       <a href="/blog/">Blog</a>
@@ -24,20 +24,46 @@
     </nav>
   </header>
   <main>
-    <section class="resources">
-      <h2>Ressources Recommandées</h2>
+    <section class="resources" itemscope itemtype="http://schema.org/ItemList">
+      <h2 itemprop="name">Ressources Recommandées</h2>
+      <meta itemprop="numberOfItems" content="6">
       <ul>
-        <li><a href="https://www.freecodecamp.org/">FreeCodeCamp</a> - Apprenez à coder gratuitement</li>
-        <li><a href="https://developer.mozilla.org/">MDN Web Docs</a> - Documentation pour les développeurs web</li>
-        <li><a href="https://www.udemy.com/">Udemy</a> - Cours en ligne pour le développement web</li>
-        <li><a href="https://www.w3schools.com/">W3Schools</a> - Tutoriels et références pour le développement web</li>
-        <li><a href="https://www.amazon.fr/">Amazon</a> - Livres sur le développement web et la programmation</li>
-        <li><a href="https://www.bytemeuh-zoo.fr/">bytemeuh-zoo</a></li>
+        
+        <!-- Ressource 1 -->
+        <li itemscope itemtype="http://schema.org/CreativeWork">
+          <a href="https://www.freecodecamp.org/" itemprop="url">FreeCodeCamp</a> - <span itemprop="description">Apprenez à coder gratuitement</span>
+        </li>
+        
+        <!-- Ressource 2 -->
+        <li itemscope itemtype="http://schema.org/CreativeWork">
+          <a href="https://developer.mozilla.org/" itemprop="url">MDN Web Docs</a> - <span itemprop="description">Documentation pour les développeurs web</span>
+        </li>
+        
+        <!-- Ressource 3 -->
+        <li itemscope itemtype="http://schema.org/CreativeWork">
+          <a href="https://www.udemy.com/" itemprop="url">Udemy</a> - <span itemprop="description">Cours en ligne pour le développement web</span>
+        </li>
+        
+        <!-- Ressource 4 -->
+        <li itemscope itemtype="http://schema.org/CreativeWork">
+          <a href="https://www.w3schools.com/" itemprop="url">W3Schools</a> - <span itemprop="description">Tutoriels et références pour le développement web</span>
+        </li>
+        
+        <!-- Ressource 5 -->
+        <li itemscope itemtype="http://schema.org/CreativeWork">
+          <a href="https://www.amazon.fr/" itemprop="url">Amazon</a> - <span itemprop="description">Livres sur le développement web et la programmation</span>
+        </li>
+        
+        <!-- Ressource 6 -->
+        <li itemscope itemtype="http://schema.org/CreativeWork">
+          <a href="https://www.bytemeuh-zoo.fr/" itemprop="url">bytemeuh-zoo</a> - <span itemprop="description">Exemples et projets interactifs pour développeurs</span>
+        </li>
+        
       </ul>
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Bytemeuh - Tous droits réservés.</p>
+    <p>&copy; 2024 <span itemprop="name">Bytemeuh</span> - Tous droits réservés.</p>
   </footer>
 </body>
 </html>

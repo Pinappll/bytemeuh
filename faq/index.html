@@ -3,16 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Bytemeuh - FAQ Bytemeuh</title>
+  <title itemprop="name">Bytemeuh - FAQ Bytemeuh</title>
   <meta name="description" content="Bytemeuh répond à vos questions fréquentes sur la technologie et les ressources disponibles sur Bytemeuh.">
   <meta name="keywords" content="FAQ Bytemeuh, questions fréquentes Bytemeuh, support, informations, aide développement web, tutoriels">
   <link rel="stylesheet" href="/styles.css">
   <link rel="canonical" href="https://www.byte-me-uh.tech/faq/">
   <link rel="icon" href="/favicon.ico">
 </head>
-<body>
+<body itemscope itemtype="http://schema.org/WebPage">
   <header>
-    <h1>Foire aux Questions</h1>
+    <h1 itemprop="name">Foire aux Questions</h1>
     <nav>
       <a href="/">Accueil</a>
       <a href="/blog/">Blog</a>
@@ -24,20 +24,29 @@
     </nav>
   </header>
   <main>
-    <section class="faq">
+    <section class="faq" itemscope itemtype="http://schema.org/FAQPage">
       <h2>Questions fréquentes</h2>
-      <div class="faq-item">
-        <h3>Comment puis-je m'abonner aux mises à jour ?</h3>
-        <p>Vous pouvez vous inscrire à notre newsletter pour recevoir les dernières nouvelles et mises à jour.</p>
+      
+      <!-- FAQ Item 1 -->
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
+        <h3 itemprop="name">Comment puis-je m'abonner aux mises à jour ?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="http://schema.org/Answer">
+          <p itemprop="text">Vous pouvez vous inscrire à notre newsletter pour recevoir les dernières nouvelles et mises à jour.</p>
+        </div>
       </div>
-      <div class="faq-item">
-        <h3>Offrez-vous des tutoriels gratuits ?</h3>
-        <p>Oui, de nombreux tutoriels sont gratuits et disponibles sur notre site.</p>
+      
+      <!-- FAQ Item 2 -->
+      <div class="faq-item" itemscope itemprop="mainEntity" itemtype="http://schema.org/Question">
+        <h3 itemprop="name">Offrez-vous des tutoriels gratuits ?</h3>
+        <div itemscope itemprop="acceptedAnswer" itemtype="http://schema.org/Answer">
+          <p itemprop="text">Oui, de nombreux tutoriels sont gratuits et disponibles sur notre site.</p>
+        </div>
       </div>
+
     </section>
   </main>
   <footer>
-    <p>&copy; 2024 Bytemeuh - Tous droits réservés.</p>
+    <p>&copy; 2024 <span itemprop="name">Bytemeuh</span> - Tous droits réservés.</p>
   </footer>
 </body>
 </html>
